@@ -11,6 +11,8 @@ import UIKit
 class AddTodoViewController: UIViewController, AddTodoView {
     var presenter: AddTodoEventHandler?
 
+    @IBOutlet var buttonDone: UIBarButtonItem!
+    @IBOutlet var buttonCancel: UIBarButtonItem!
     @IBOutlet weak var switchCompleted: UISwitch!
     @IBOutlet weak var textFieldTask: UITextField!
     
@@ -28,6 +30,17 @@ class AddTodoViewController: UIViewController, AddTodoView {
 
     deinit {
         debugPrint(String(describing: self), "deinit")
+    }
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        configureUI()
+    }
+
+    func configureUI() {
+        navigationItem.rightBarButtonItem = buttonDone
+        navigationItem.leftBarButtonItem = buttonCancel
     }
 
     // MARK: - AddTodoView

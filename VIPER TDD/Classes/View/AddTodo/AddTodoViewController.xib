@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddTodoViewController" customModule="VIPER_TDD" customModuleProvider="target">
+            <connections>
+                <outlet property="switchCompleted" destination="imD-rL-6a2" id="miR-Yd-tIC"/>
+                <outlet property="textFieldTask" destination="ssc-rw-JvP" id="vJm-pS-a3H"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is your task?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fT7-sG-mrD">
+                    <rect key="frame" x="16" y="94" width="141" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ssc-rw-JvP">
+                    <rect key="frame" x="16" y="123" width="343" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="imD-rL-6a2">
+                    <rect key="frame" x="16" y="190" width="51" height="31"/>
+                </switch>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is it completed?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OXG-4R-7fo">
+                    <rect key="frame" x="16" y="161" width="121" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ssc-rw-JvP" secondAttribute="trailing" constant="16" id="5mg-Lb-pYo"/>
+                <constraint firstItem="OXG-4R-7fo" firstAttribute="top" secondItem="ssc-rw-JvP" secondAttribute="bottom" constant="8" id="7P3-Ut-ipm"/>
+                <constraint firstItem="fT7-sG-mrD" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="JND-0l-nyh"/>
+                <constraint firstItem="imD-rL-6a2" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="Vps-2o-IVV"/>
+                <constraint firstItem="ssc-rw-JvP" firstAttribute="top" secondItem="fT7-sG-mrD" secondAttribute="bottom" constant="8" id="ZuM-Ll-5hE"/>
+                <constraint firstItem="OXG-4R-7fo" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="iq8-fD-hoJ"/>
+                <constraint firstItem="fT7-sG-mrD" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="74" id="is6-Bg-ZOL"/>
+                <constraint firstItem="imD-rL-6a2" firstAttribute="top" secondItem="OXG-4R-7fo" secondAttribute="bottom" constant="8" id="xJ3-PL-rus"/>
+                <constraint firstItem="ssc-rw-JvP" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="xVT-78-V6H"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="53.600000000000001" y="54.422788605697157"/>
+        </view>
+        <barButtonItem style="plain" systemItem="done" id="PeW-KZ-gBF">
+            <connections>
+                <action selector="onButtonDoneClicked" destination="-1" id="OCK-oY-Mc1"/>
+            </connections>
+        </barButtonItem>
+        <barButtonItem style="plain" systemItem="cancel" id="Y3Q-rL-wSx">
+            <connections>
+                <action selector="onButtonCancelClicked" destination="-1" id="f9f-Sy-Hh5"/>
+            </connections>
+        </barButtonItem>
+    </objects>
+</document>

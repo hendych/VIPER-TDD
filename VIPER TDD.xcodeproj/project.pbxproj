@@ -1,0 +1,816 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		52A7116A215B5F1D007956F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A71169215B5F1D007956F8 /* AppDelegate.swift */; };
+		52A71177215B5F21007956F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52A71175215B5F21007956F8 /* LaunchScreen.storyboard */; };
+		52A711A4215B6054007956F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52A711A3215B6054007956F8 /* Assets.xcassets */; };
+		52A711BC215B60E8007956F8 /* VIPER_TDD.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 52A711AA215B60E8007956F8 /* VIPER_TDD.xcdatamodeld */; };
+		52A711BD215B60E8007956F8 /* ListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A711AE215B60E8007956F8 /* ListPresenter.swift */; };
+		52A711BE215B60E8007956F8 /* ListEventHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A711AF215B60E8007956F8 /* ListEventHandler.swift */; };
+		52A711BF215B60E8007956F8 /* ListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52A711B2215B60E8007956F8 /* ListViewController.xib */; };
+		52A711C0215B60E8007956F8 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A711B3215B60E8007956F8 /* ListViewController.swift */; };
+		52A711C1215B60E8007956F8 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A711B4215B60E8007956F8 /* ListView.swift */; };
+		52A711C2215B60E8007956F8 /* ListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A711B7215B60E8007956F8 /* ListInteractor.swift */; };
+		52A711C3215B60E8007956F8 /* ListInteractorIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A711B8215B60E8007956F8 /* ListInteractorIO.swift */; };
+		52A711C4215B60E8007956F8 /* ListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A711BB215B60E8007956F8 /* ListRouter.swift */; };
+		52A711D0215B6417007956F8 /* ListViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A711CF215B6417007956F8 /* ListViewTests.swift */; };
+		52A711D2215B6424007956F8 /* ListInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A711D1215B6424007956F8 /* ListInteractorTests.swift */; };
+		52A711D4215B6430007956F8 /* ListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A711D3215B6430007956F8 /* ListPresenterTests.swift */; };
+		52A711D6215B643D007956F8 /* TodoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A711D5215B643D007956F8 /* TodoTests.swift */; };
+		52A711D8215B6451007956F8 /* ListRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A711D7215B6451007956F8 /* ListRouterTests.swift */; };
+		52A711DA215B650C007956F8 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A711D9215B650C007956F8 /* Todo.swift */; };
+		52A711DD215B6681007956F8 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A711DC215B6681007956F8 /* CoreDataManager.swift */; };
+		52A711DF215B66B4007956F8 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A711DE215B66B4007956F8 /* Entity.swift */; };
+		52A711E1215B6CA1007956F8 /* MockPersistentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A711E0215B6CA1007956F8 /* MockPersistentContainer.swift */; };
+		52A711E5215B6CED007956F8 /* MockCoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A711E4215B6CED007956F8 /* MockCoreDataManager.swift */; };
+		52A711E7215B6EC3007956F8 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A711E6215B6EC3007956F8 /* Router.swift */; };
+		52A711E9215B700D007956F8 /* MockListInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A711E8215B700D007956F8 /* MockListInteractorOutput.swift */; };
+		52A711EB215B7725007956F8 /* MockListInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A711EA215B7725007956F8 /* MockListInteractorInput.swift */; };
+		52A711EF215B7776007956F8 /* MockListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A711EE215B7776007956F8 /* MockListView.swift */; };
+		52A711F1215B77FB007956F8 /* MockListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A711F0215B77FB007956F8 /* MockListRouter.swift */; };
+		52A711F5215B7B36007956F8 /* TodoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A711F3215B7B36007956F8 /* TodoTableViewCell.swift */; };
+		52A711F6215B7B36007956F8 /* TodoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52A711F4215B7B36007956F8 /* TodoTableViewCell.xib */; };
+		52A711F8215B7F61007956F8 /* MockListEventHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A711F7215B7F61007956F8 /* MockListEventHandler.swift */; };
+		52A711FE215B888D007956F8 /* AddTodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A711FD215B888C007956F8 /* AddTodoView.swift */; };
+		52A71201215B890D007956F8 /* AddTodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A711FF215B890D007956F8 /* AddTodoViewController.swift */; };
+		52A71202215B890D007956F8 /* AddTodoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52A71200215B890D007956F8 /* AddTodoViewController.xib */; };
+		52A71204215B893E007956F8 /* AddTodoInteractorIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A71203215B893E007956F8 /* AddTodoInteractorIO.swift */; };
+		52A71206215B8958007956F8 /* AddTodoInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A71205215B8958007956F8 /* AddTodoInteractor.swift */; };
+		52A71208215B898E007956F8 /* AddTodoEventHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A71207215B898E007956F8 /* AddTodoEventHandler.swift */; };
+		52A7120A215B89BD007956F8 /* AddTodoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A71209215B89BD007956F8 /* AddTodoPresenter.swift */; };
+		52A7120C215B89E8007956F8 /* AddTodoRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A7120B215B89E8007956F8 /* AddTodoRouter.swift */; };
+		52A71210215B8FBC007956F8 /* AddTodoInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A7120F215B8FBC007956F8 /* AddTodoInteractorTests.swift */; };
+		52A71212215B8FEB007956F8 /* MockAddTodoInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A71211215B8FEB007956F8 /* MockAddTodoInteractorOutput.swift */; };
+		52A71216215B9DB8007956F8 /* AddTodoPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A71215215B9DB8007956F8 /* AddTodoPresenterTests.swift */; };
+		52A71218215B9E18007956F8 /* MockAddTodoInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A71217215B9E18007956F8 /* MockAddTodoInteractorInput.swift */; };
+		52A7121A215B9E5E007956F8 /* MockAddTodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A71219215B9E5E007956F8 /* MockAddTodoView.swift */; };
+		52A7121C215B9E7D007956F8 /* MockAddTodoRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A7121B215B9E7D007956F8 /* MockAddTodoRouter.swift */; };
+		52A71220215BA24D007956F8 /* AddTodoViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A7121F215BA24D007956F8 /* AddTodoViewTests.swift */; };
+		52A71222215BA27F007956F8 /* MockAddTodoEventHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A71221215BA27F007956F8 /* MockAddTodoEventHandler.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		52A7117E215B5F21007956F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52A7115E215B5F1D007956F8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52A71165215B5F1D007956F8;
+			remoteInfo = "VIPER TDD";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		52A71166215B5F1D007956F8 /* VIPER TDD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VIPER TDD.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		52A71169215B5F1D007956F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		52A71176215B5F21007956F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		52A71178215B5F21007956F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52A7117D215B5F21007956F8 /* VIPER TDDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VIPER TDDTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		52A71183215B5F21007956F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52A711A3215B6054007956F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		52A711AB215B60E8007956F8 /* VIPER_TDD.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VIPER_TDD.xcdatamodel; sourceTree = "<group>"; };
+		52A711AE215B60E8007956F8 /* ListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPresenter.swift; sourceTree = "<group>"; };
+		52A711AF215B60E8007956F8 /* ListEventHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListEventHandler.swift; sourceTree = "<group>"; };
+		52A711B2215B60E8007956F8 /* ListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListViewController.xib; sourceTree = "<group>"; };
+		52A711B3215B60E8007956F8 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		52A711B4215B60E8007956F8 /* ListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		52A711B7215B60E8007956F8 /* ListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListInteractor.swift; sourceTree = "<group>"; };
+		52A711B8215B60E8007956F8 /* ListInteractorIO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListInteractorIO.swift; sourceTree = "<group>"; };
+		52A711BB215B60E8007956F8 /* ListRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListRouter.swift; sourceTree = "<group>"; };
+		52A711CF215B6417007956F8 /* ListViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewTests.swift; sourceTree = "<group>"; };
+		52A711D1215B6424007956F8 /* ListInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListInteractorTests.swift; sourceTree = "<group>"; };
+		52A711D3215B6430007956F8 /* ListPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPresenterTests.swift; sourceTree = "<group>"; };
+		52A711D5215B643D007956F8 /* TodoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoTests.swift; sourceTree = "<group>"; };
+		52A711D7215B6451007956F8 /* ListRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRouterTests.swift; sourceTree = "<group>"; };
+		52A711D9215B650C007956F8 /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
+		52A711DC215B6681007956F8 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		52A711DE215B66B4007956F8 /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
+		52A711E0215B6CA1007956F8 /* MockPersistentContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPersistentContainer.swift; sourceTree = "<group>"; };
+		52A711E4215B6CED007956F8 /* MockCoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCoreDataManager.swift; sourceTree = "<group>"; };
+		52A711E6215B6EC3007956F8 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		52A711E8215B700D007956F8 /* MockListInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockListInteractorOutput.swift; sourceTree = "<group>"; };
+		52A711EA215B7725007956F8 /* MockListInteractorInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockListInteractorInput.swift; sourceTree = "<group>"; };
+		52A711EE215B7776007956F8 /* MockListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockListView.swift; sourceTree = "<group>"; };
+		52A711F0215B77FB007956F8 /* MockListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockListRouter.swift; sourceTree = "<group>"; };
+		52A711F3215B7B36007956F8 /* TodoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoTableViewCell.swift; sourceTree = "<group>"; };
+		52A711F4215B7B36007956F8 /* TodoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TodoTableViewCell.xib; sourceTree = "<group>"; };
+		52A711F7215B7F61007956F8 /* MockListEventHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockListEventHandler.swift; sourceTree = "<group>"; };
+		52A711FD215B888C007956F8 /* AddTodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTodoView.swift; sourceTree = "<group>"; };
+		52A711FF215B890D007956F8 /* AddTodoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTodoViewController.swift; sourceTree = "<group>"; };
+		52A71200215B890D007956F8 /* AddTodoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddTodoViewController.xib; sourceTree = "<group>"; };
+		52A71203215B893E007956F8 /* AddTodoInteractorIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTodoInteractorIO.swift; sourceTree = "<group>"; };
+		52A71205215B8958007956F8 /* AddTodoInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTodoInteractor.swift; sourceTree = "<group>"; };
+		52A71207215B898E007956F8 /* AddTodoEventHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTodoEventHandler.swift; sourceTree = "<group>"; };
+		52A71209215B89BD007956F8 /* AddTodoPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTodoPresenter.swift; sourceTree = "<group>"; };
+		52A7120B215B89E8007956F8 /* AddTodoRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTodoRouter.swift; sourceTree = "<group>"; };
+		52A7120F215B8FBC007956F8 /* AddTodoInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTodoInteractorTests.swift; sourceTree = "<group>"; };
+		52A71211215B8FEB007956F8 /* MockAddTodoInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAddTodoInteractorOutput.swift; sourceTree = "<group>"; };
+		52A71215215B9DB8007956F8 /* AddTodoPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTodoPresenterTests.swift; sourceTree = "<group>"; };
+		52A71217215B9E18007956F8 /* MockAddTodoInteractorInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAddTodoInteractorInput.swift; sourceTree = "<group>"; };
+		52A71219215B9E5E007956F8 /* MockAddTodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAddTodoView.swift; sourceTree = "<group>"; };
+		52A7121B215B9E7D007956F8 /* MockAddTodoRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAddTodoRouter.swift; sourceTree = "<group>"; };
+		52A7121F215BA24D007956F8 /* AddTodoViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTodoViewTests.swift; sourceTree = "<group>"; };
+		52A71221215BA27F007956F8 /* MockAddTodoEventHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAddTodoEventHandler.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		52A71163215B5F1D007956F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52A7117A215B5F21007956F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		52A7115D215B5F1D007956F8 = {
+			isa = PBXGroup;
+			children = (
+				52A71168215B5F1D007956F8 /* VIPER TDD */,
+				52A71180215B5F21007956F8 /* VIPER TDDTests */,
+				52A71167215B5F1D007956F8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		52A71167215B5F1D007956F8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52A71166215B5F1D007956F8 /* VIPER TDD.app */,
+				52A7117D215B5F21007956F8 /* VIPER TDDTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		52A71168215B5F1D007956F8 /* VIPER TDD */ = {
+			isa = PBXGroup;
+			children = (
+				52A71169215B5F1D007956F8 /* AppDelegate.swift */,
+				52A711DB215B6644007956F8 /* Manager */,
+				52A711A8215B60E8007956F8 /* Classes */,
+				52A711A2215B6053007956F8 /* Resources */,
+				52A71175215B5F21007956F8 /* LaunchScreen.storyboard */,
+				52A71178215B5F21007956F8 /* Info.plist */,
+			);
+			path = "VIPER TDD";
+			sourceTree = "<group>";
+		};
+		52A71180215B5F21007956F8 /* VIPER TDDTests */ = {
+			isa = PBXGroup;
+			children = (
+				52A711C5215B6315007956F8 /* Mocks */,
+				52A711CA215B634D007956F8 /* View */,
+				52A711CB215B6356007956F8 /* Interactor */,
+				52A711CC215B6365007956F8 /* Presenter */,
+				52A711CD215B6370007956F8 /* Entity */,
+				52A711CE215B6377007956F8 /* Router */,
+				52A71183215B5F21007956F8 /* Info.plist */,
+			);
+			path = "VIPER TDDTests";
+			sourceTree = "<group>";
+		};
+		52A711A2215B6053007956F8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				52A711A3215B6054007956F8 /* Assets.xcassets */,
+			);
+			name = Resources;
+			path = "VIPER TDD/Resources";
+			sourceTree = SOURCE_ROOT;
+		};
+		52A711A8215B60E8007956F8 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				52A711F2215B7B20007956F8 /* Component */,
+				52A711B0215B60E8007956F8 /* View */,
+				52A711B5215B60E8007956F8 /* Interactor */,
+				52A711AC215B60E8007956F8 /* Presenter */,
+				52A711A9215B60E8007956F8 /* Entity */,
+				52A711B9215B60E8007956F8 /* Router */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		52A711A9215B60E8007956F8 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				52A711AA215B60E8007956F8 /* VIPER_TDD.xcdatamodeld */,
+				52A711DE215B66B4007956F8 /* Entity.swift */,
+				52A711D9215B650C007956F8 /* Todo.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		52A711AC215B60E8007956F8 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				52A711AD215B60E8007956F8 /* List */,
+				52A711FA215B8859007956F8 /* AddTodo */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		52A711AD215B60E8007956F8 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				52A711AF215B60E8007956F8 /* ListEventHandler.swift */,
+				52A711AE215B60E8007956F8 /* ListPresenter.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		52A711B0215B60E8007956F8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				52A711B1215B60E8007956F8 /* List */,
+				52A711FC215B887D007956F8 /* AddTodo */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		52A711B1215B60E8007956F8 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				52A711B4215B60E8007956F8 /* ListView.swift */,
+				52A711B3215B60E8007956F8 /* ListViewController.swift */,
+				52A711B2215B60E8007956F8 /* ListViewController.xib */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		52A711B5215B60E8007956F8 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				52A711B6215B60E8007956F8 /* List */,
+				52A711FB215B886B007956F8 /* AddTodo */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		52A711B6215B60E8007956F8 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				52A711B8215B60E8007956F8 /* ListInteractorIO.swift */,
+				52A711B7215B60E8007956F8 /* ListInteractor.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		52A711B9215B60E8007956F8 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				52A711E6215B6EC3007956F8 /* Router.swift */,
+				52A711BA215B60E8007956F8 /* List */,
+				52A711F9215B8845007956F8 /* AddTodo */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		52A711BA215B60E8007956F8 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				52A711BB215B60E8007956F8 /* ListRouter.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		52A711C5215B6315007956F8 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				52A711E4215B6CED007956F8 /* MockCoreDataManager.swift */,
+				52A711E0215B6CA1007956F8 /* MockPersistentContainer.swift */,
+				52A711E8215B700D007956F8 /* MockListInteractorOutput.swift */,
+				52A711EA215B7725007956F8 /* MockListInteractorInput.swift */,
+				52A711EE215B7776007956F8 /* MockListView.swift */,
+				52A711F0215B77FB007956F8 /* MockListRouter.swift */,
+				52A711F7215B7F61007956F8 /* MockListEventHandler.swift */,
+				52A71211215B8FEB007956F8 /* MockAddTodoInteractorOutput.swift */,
+				52A71217215B9E18007956F8 /* MockAddTodoInteractorInput.swift */,
+				52A71219215B9E5E007956F8 /* MockAddTodoView.swift */,
+				52A7121B215B9E7D007956F8 /* MockAddTodoRouter.swift */,
+				52A71221215BA27F007956F8 /* MockAddTodoEventHandler.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		52A711CA215B634D007956F8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				52A711CF215B6417007956F8 /* ListViewTests.swift */,
+				52A7121F215BA24D007956F8 /* AddTodoViewTests.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		52A711CB215B6356007956F8 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				52A711D1215B6424007956F8 /* ListInteractorTests.swift */,
+				52A7120F215B8FBC007956F8 /* AddTodoInteractorTests.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		52A711CC215B6365007956F8 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				52A711D3215B6430007956F8 /* ListPresenterTests.swift */,
+				52A71215215B9DB8007956F8 /* AddTodoPresenterTests.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		52A711CD215B6370007956F8 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				52A711D5215B643D007956F8 /* TodoTests.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		52A711CE215B6377007956F8 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				52A711D7215B6451007956F8 /* ListRouterTests.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		52A711DB215B6644007956F8 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				52A711DC215B6681007956F8 /* CoreDataManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		52A711F2215B7B20007956F8 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				52A711F3215B7B36007956F8 /* TodoTableViewCell.swift */,
+				52A711F4215B7B36007956F8 /* TodoTableViewCell.xib */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		52A711F9215B8845007956F8 /* AddTodo */ = {
+			isa = PBXGroup;
+			children = (
+				52A7120B215B89E8007956F8 /* AddTodoRouter.swift */,
+			);
+			path = AddTodo;
+			sourceTree = "<group>";
+		};
+		52A711FA215B8859007956F8 /* AddTodo */ = {
+			isa = PBXGroup;
+			children = (
+				52A71207215B898E007956F8 /* AddTodoEventHandler.swift */,
+				52A71209215B89BD007956F8 /* AddTodoPresenter.swift */,
+			);
+			path = AddTodo;
+			sourceTree = "<group>";
+		};
+		52A711FB215B886B007956F8 /* AddTodo */ = {
+			isa = PBXGroup;
+			children = (
+				52A71203215B893E007956F8 /* AddTodoInteractorIO.swift */,
+				52A71205215B8958007956F8 /* AddTodoInteractor.swift */,
+			);
+			path = AddTodo;
+			sourceTree = "<group>";
+		};
+		52A711FC215B887D007956F8 /* AddTodo */ = {
+			isa = PBXGroup;
+			children = (
+				52A711FD215B888C007956F8 /* AddTodoView.swift */,
+				52A711FF215B890D007956F8 /* AddTodoViewController.swift */,
+				52A71200215B890D007956F8 /* AddTodoViewController.xib */,
+			);
+			path = AddTodo;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		52A71165215B5F1D007956F8 /* VIPER TDD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52A71186215B5F21007956F8 /* Build configuration list for PBXNativeTarget "VIPER TDD" */;
+			buildPhases = (
+				52A71162215B5F1D007956F8 /* Sources */,
+				52A71163215B5F1D007956F8 /* Frameworks */,
+				52A71164215B5F1D007956F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "VIPER TDD";
+			productName = "VIPER TDD";
+			productReference = 52A71166215B5F1D007956F8 /* VIPER TDD.app */;
+			productType = "com.apple.product-type.application";
+		};
+		52A7117C215B5F21007956F8 /* VIPER TDDTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52A71189215B5F21007956F8 /* Build configuration list for PBXNativeTarget "VIPER TDDTests" */;
+			buildPhases = (
+				52A71179215B5F21007956F8 /* Sources */,
+				52A7117A215B5F21007956F8 /* Frameworks */,
+				52A7117B215B5F21007956F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52A7117F215B5F21007956F8 /* PBXTargetDependency */,
+			);
+			name = "VIPER TDDTests";
+			productName = "VIPER TDDTests";
+			productReference = 52A7117D215B5F21007956F8 /* VIPER TDDTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		52A7115E215B5F1D007956F8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Hendy Christianto";
+				TargetAttributes = {
+					52A71165215B5F1D007956F8 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					52A7117C215B5F21007956F8 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 52A71165215B5F1D007956F8;
+					};
+				};
+			};
+			buildConfigurationList = 52A71161215B5F1D007956F8 /* Build configuration list for PBXProject "VIPER TDD" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 52A7115D215B5F1D007956F8;
+			productRefGroup = 52A71167215B5F1D007956F8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				52A71165215B5F1D007956F8 /* VIPER TDD */,
+				52A7117C215B5F21007956F8 /* VIPER TDDTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		52A71164215B5F1D007956F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52A71202215B890D007956F8 /* AddTodoViewController.xib in Resources */,
+				52A71177215B5F21007956F8 /* LaunchScreen.storyboard in Resources */,
+				52A711A4215B6054007956F8 /* Assets.xcassets in Resources */,
+				52A711BF215B60E8007956F8 /* ListViewController.xib in Resources */,
+				52A711F6215B7B36007956F8 /* TodoTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52A7117B215B5F21007956F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		52A71162215B5F1D007956F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52A7120C215B89E8007956F8 /* AddTodoRouter.swift in Sources */,
+				52A711C4215B60E8007956F8 /* ListRouter.swift in Sources */,
+				52A711C3215B60E8007956F8 /* ListInteractorIO.swift in Sources */,
+				52A71206215B8958007956F8 /* AddTodoInteractor.swift in Sources */,
+				52A7116A215B5F1D007956F8 /* AppDelegate.swift in Sources */,
+				52A7120A215B89BD007956F8 /* AddTodoPresenter.swift in Sources */,
+				52A711BE215B60E8007956F8 /* ListEventHandler.swift in Sources */,
+				52A71201215B890D007956F8 /* AddTodoViewController.swift in Sources */,
+				52A711C1215B60E8007956F8 /* ListView.swift in Sources */,
+				52A711C2215B60E8007956F8 /* ListInteractor.swift in Sources */,
+				52A711DD215B6681007956F8 /* CoreDataManager.swift in Sources */,
+				52A711F5215B7B36007956F8 /* TodoTableViewCell.swift in Sources */,
+				52A71204215B893E007956F8 /* AddTodoInteractorIO.swift in Sources */,
+				52A711BD215B60E8007956F8 /* ListPresenter.swift in Sources */,
+				52A711DF215B66B4007956F8 /* Entity.swift in Sources */,
+				52A711C0215B60E8007956F8 /* ListViewController.swift in Sources */,
+				52A711BC215B60E8007956F8 /* VIPER_TDD.xcdatamodeld in Sources */,
+				52A711DA215B650C007956F8 /* Todo.swift in Sources */,
+				52A711E7215B6EC3007956F8 /* Router.swift in Sources */,
+				52A71208215B898E007956F8 /* AddTodoEventHandler.swift in Sources */,
+				52A711FE215B888D007956F8 /* AddTodoView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52A71179215B5F21007956F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52A711E1215B6CA1007956F8 /* MockPersistentContainer.swift in Sources */,
+				52A711F8215B7F61007956F8 /* MockListEventHandler.swift in Sources */,
+				52A711EB215B7725007956F8 /* MockListInteractorInput.swift in Sources */,
+				52A71212215B8FEB007956F8 /* MockAddTodoInteractorOutput.swift in Sources */,
+				52A711D0215B6417007956F8 /* ListViewTests.swift in Sources */,
+				52A711D2215B6424007956F8 /* ListInteractorTests.swift in Sources */,
+				52A711D6215B643D007956F8 /* TodoTests.swift in Sources */,
+				52A711EF215B7776007956F8 /* MockListView.swift in Sources */,
+				52A711E5215B6CED007956F8 /* MockCoreDataManager.swift in Sources */,
+				52A71222215BA27F007956F8 /* MockAddTodoEventHandler.swift in Sources */,
+				52A71220215BA24D007956F8 /* AddTodoViewTests.swift in Sources */,
+				52A711D4215B6430007956F8 /* ListPresenterTests.swift in Sources */,
+				52A71216215B9DB8007956F8 /* AddTodoPresenterTests.swift in Sources */,
+				52A711D8215B6451007956F8 /* ListRouterTests.swift in Sources */,
+				52A71210215B8FBC007956F8 /* AddTodoInteractorTests.swift in Sources */,
+				52A711F1215B77FB007956F8 /* MockListRouter.swift in Sources */,
+				52A7121C215B9E7D007956F8 /* MockAddTodoRouter.swift in Sources */,
+				52A7121A215B9E5E007956F8 /* MockAddTodoView.swift in Sources */,
+				52A71218215B9E18007956F8 /* MockAddTodoInteractorInput.swift in Sources */,
+				52A711E9215B700D007956F8 /* MockListInteractorOutput.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		52A7117F215B5F21007956F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52A71165215B5F1D007956F8 /* VIPER TDD */;
+			targetProxy = 52A7117E215B5F21007956F8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		52A71175215B5F21007956F8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52A71176215B5F21007956F8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		52A71184215B5F21007956F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		52A71185215B5F21007956F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		52A71187215B5F21007956F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "VIPER TDD/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hendychristianto.VIPER-TDD";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		52A71188215B5F21007956F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "VIPER TDD/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hendychristianto.VIPER-TDD";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		52A7118A215B5F21007956F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "VIPER TDDTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hendychristianto.VIPER-TDDTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VIPER TDD.app/VIPER TDD";
+			};
+			name = Debug;
+		};
+		52A7118B215B5F21007956F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "VIPER TDDTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hendychristianto.VIPER-TDDTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VIPER TDD.app/VIPER TDD";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		52A71161215B5F1D007956F8 /* Build configuration list for PBXProject "VIPER TDD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52A71184215B5F21007956F8 /* Debug */,
+				52A71185215B5F21007956F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52A71186215B5F21007956F8 /* Build configuration list for PBXNativeTarget "VIPER TDD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52A71187215B5F21007956F8 /* Debug */,
+				52A71188215B5F21007956F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52A71189215B5F21007956F8 /* Build configuration list for PBXNativeTarget "VIPER TDDTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52A7118A215B5F21007956F8 /* Debug */,
+				52A7118B215B5F21007956F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		52A711AA215B60E8007956F8 /* VIPER_TDD.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				52A711AB215B60E8007956F8 /* VIPER_TDD.xcdatamodel */,
+			);
+			currentVersion = 52A711AB215B60E8007956F8 /* VIPER_TDD.xcdatamodel */;
+			path = VIPER_TDD.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 52A7115E215B5F1D007956F8 /* Project object */;
+}

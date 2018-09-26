@@ -48,11 +48,4 @@ class AddTodoViewTests: XCTestCase {
         XCTAssert(mockEventHandler?.data?[TodoKey.completed.rawValue] as? Bool == true,
                   "Expect inserted data completed is true")
     }
-
-    func testActionButtonCancelClicked() {
-        view?.onButtonCancelClicked()
-
-        XCTAssert(mockEventHandler?.addTodoDidClickCancelCalled == 1,
-                  "Expect addTodoDidClickCancel called once")
-    }
 }

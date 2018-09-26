@@ -12,14 +12,9 @@ import Foundation
 class MockAddTodoEventHandler: AddTodoEventHandler {
     private(set) var data: [String: Any]?
     private(set) var addTodoDidClickAddCalled = 0
-    private(set) var addTodoDidClickCancelCalled = 0
 
     func addTodoDidClickAdd(withData data: [String: Any]) {
         self.data = data
         self.addTodoDidClickAddCalled += 1
-    }
-
-    func addTodoDidClickCancel() {
-        self.addTodoDidClickCancelCalled += 1
     }
 }

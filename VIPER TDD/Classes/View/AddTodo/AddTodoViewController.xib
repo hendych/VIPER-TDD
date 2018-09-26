@@ -12,7 +12,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddTodoViewController" customModule="VIPER_TDD" customModuleProvider="target">
             <connections>
-                <outlet property="buttonCancel" destination="Y3Q-rL-wSx" id="WoT-vB-5Ir"/>
                 <outlet property="buttonDone" destination="PeW-KZ-gBF" id="Ldj-eA-K5a"/>
                 <outlet property="switchCompleted" destination="imD-rL-6a2" id="miR-Yd-tIC"/>
                 <outlet property="textFieldTask" destination="ssc-rw-JvP" id="vJm-pS-a3H"/>
@@ -64,11 +63,6 @@
         <barButtonItem style="plain" systemItem="done" id="PeW-KZ-gBF">
             <connections>
                 <action selector="onButtonDoneClicked" destination="-1" id="OCK-oY-Mc1"/>
-            </connections>
-        </barButtonItem>
-        <barButtonItem style="plain" systemItem="cancel" id="Y3Q-rL-wSx">
-            <connections>
-                <action selector="onButtonCancelClicked" destination="-1" id="f9f-Sy-Hh5"/>
             </connections>
         </barButtonItem>
     </objects>

@@ -27,10 +27,6 @@ class AddTodoPresenter: AddTodoEventHandler, AddTodoInteractorOutput {
         interactor.addTodo(withData: data)
     }
 
-    func addTodoDidClickCancel() {
-        view?.navigationController?.popViewController(animated: true)
-    }
-
     // MARK: - AddTodoInteractorOutput
     func addTodoSuccess(todo: Todo) {
         view?.showAlert(withMessage: "Add todo success with id \(todo.id ?? "").",

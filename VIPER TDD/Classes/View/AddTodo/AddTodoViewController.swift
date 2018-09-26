@@ -66,8 +66,4 @@ class AddTodoViewController: UIViewController, AddTodoView {
 
         presenter?.addTodoDidClickAdd(withData: data)
     }
-
-    @IBAction func onButtonCancelClicked() {
-        presenter?.addTodoDidClickCancel()
-    }
 }

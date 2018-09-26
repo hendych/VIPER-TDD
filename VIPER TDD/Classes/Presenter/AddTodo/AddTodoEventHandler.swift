@@ -10,6 +10,4 @@ import Foundation
 
 protocol AddTodoEventHandler: class {
     func addTodoDidClickAdd(withData data: [String: Any])
-
-    func addTodoDidClickCancel()
 }

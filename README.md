@@ -1,3 +1,6 @@
+# Build Status
+[![Build Status](https://travis-ci.org/hendych/VIPER-TDD.svg)](https://travis-ci.org/hendych/VIPER-TDD) [![codecov](https://codecov.io/gh/hendych/VIPER-TDD/branch/master/graph/badge.svg)](https://codecov.io/gh/hendych/VIPER-TDD)
+
 # Introduction
 Welcome to memory leak free VIPER pattern with TDD. VIPER is based on uncle bob's clean architecture. Details of VIPER can be seen on this [link](https://www.objc.io/issues/13-architecture/viper/).
 

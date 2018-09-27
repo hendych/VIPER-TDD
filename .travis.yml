@@ -1,0 +1,9 @@
+language: objective-c
+osx_image: xcode10
+script:
+- "./runme.sh"
+after_success:
+- bash <(curl -s https://codecov.io/bash)
+env:
+  matrix:
+    secure: otFlIBOl6k+bIpwyGAlXb09lRlK1D3Pfd6k2lloMAtuobt/HJSH5p/s2/gPhqP3EZdYXA0Kpf1OELnomh5aocN9PYS90G6PPnN9xW/1c1FIlL7Myz2ZBRvj34SI04D+1/xtgOzD+jhIxhoFr95bOJHtdfcGuSXN9PpuCRh3t68yN8lX5JVbz3DT93dEI3BveYxroFMP4f17w/hTSgo0WR9x6DRtSAR1B9abbstWFtscXtYjcXht5xpD9MFFqidv99DgcyEolnnju/Xg+lge+OoqF+xybkQH03mVlyZ/g5M421wQIIsNFPeUX5NdS19D1J+eh6xYUlB+sTlpPswPjhieon6rDGDA5MOBQ1chvWJ6UJuuHQIEggEFrmk4YjKQGUapV25lQFtUnyAnSlCp1qs/zI3/GrQauljv0sKAyuDL16DC47Plyy6y3tOZq1lnPqkMmhzwb1czKscffADLBZi7ePm6GHBtF9cZIqUcdXlRhHg3HUwuy4kCoN4CRRnqT/9ueLGlG7Ls/yiTyLb9B2M/aKs7NVh7kkl87xr+sJvP2QWpArZC9sIybGZokTcR5BT9uIge15ezZmNMZUlWzPsOypLecRRVrm2uOfx7Z2zMdTqthcOiIatdjEveJQdWDvgwMPJFMjwTA9TUtJYIVnvA9erwHUF4zF28yYFkNAtE=
